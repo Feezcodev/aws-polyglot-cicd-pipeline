@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - echo "Build started on `date`"
+      - node index.js
+  post_build:
+    commands:
+      - echo "Build completed successfully"

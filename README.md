@@ -37,6 +37,8 @@ To adhere to the principle of least privilege, two dedicated service roles were 
 
 ## 🛠️ Build & Runtime Configuration (`buildspec.yml`)
 
+## 🛠️ Build & Runtime Configuration (`buildspec.yml`)
+
 The build specification configures the runtime environment for Go compilation along with Node.js and Python execution:
 
 ```yaml
@@ -58,10 +60,10 @@ phases:
       - ./app
 artifacts:
   files:
-   - app
+    - app
+```
 
- 
- Verification & Evidence Screenshots
+## 📸 Verification & Evidence Screenshots
 
 The following screenshots validate the successful execution and deployment pipeline:
 

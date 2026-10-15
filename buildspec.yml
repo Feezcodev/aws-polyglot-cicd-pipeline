@@ -3,18 +3,19 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      golang: 1.x
       nodejs: 18
-      python: 3.x
+    commands:
+      - echo Installing dependencies...
+      - npm install
   build:
     commands:
-      - echo "Starting build process..."
-      - go version
-      - node --version
-      - python3 --version
-      - go build -o app main.go
-      - ./app
+      - echo Building application...
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed successfully on $(date)
+      - echo Packaging artifacts for deployment...
 
 artifacts:
   files:
-    - app
+    - '**/*'

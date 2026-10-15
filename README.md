@@ -58,9 +58,10 @@ phases:
       - ./app
 artifacts:
   files:
-    - app
+   - app
 
-    ## 📸 Verification & Evidence Screenshots
+ 
+ Verification & Evidence Screenshots
 
 The following screenshots validate the successful execution and deployment pipeline:
 

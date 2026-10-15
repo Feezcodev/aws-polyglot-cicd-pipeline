@@ -1,0 +1,15 @@
+# AWS local configuration
+.aws/
+
+# Environment variables & secrets
+.env
+*.pem
+*.key
+
+# Local build outputs & binaries
+app
+*.exe
+*.out
+
+# Node dependencies
+node_modules/

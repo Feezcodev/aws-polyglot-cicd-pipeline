@@ -8,9 +8,13 @@ phases:
       python: 3.x
   build:
     commands:
-      - echo "Building application..."
+      - echo "Starting build process..."
+      - go version
+      - node --version
+      - python3 --version
       - go build -o app main.go
-  post_build:
-    commands:
-      - echo "Executing compiled binary..."
       - ./app
+
+artifacts:
+  files:
+    - app

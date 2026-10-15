@@ -3,11 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18
+      golang: 1.x
   build:
     commands:
-      - echo "Build started on `date`"
-      - node index.js
+      - echo "Building Go application..."
+      - go build -o app main.go
   post_build:
     commands:
-      - echo "Build completed successfully"
+      - echo "Executing compiled binary..."
+      - ./app
